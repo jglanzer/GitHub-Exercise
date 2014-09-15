@@ -17,10 +17,14 @@ public class MyDrawing extends JPanel {
 		cat.draw(g, 50, 50);
 	}
 	
+	public void paintComponent(Graphics g, int x, int y){
+		cat.draw(g, x, y);
+	}
+	
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
+	public static final main(String[] args) {
 		JFrame frame = new JFrame();
 		// Create a JPanel (MyDrawing), we'll draw on this
 		frame.setContentPane(new MyDrawing());
